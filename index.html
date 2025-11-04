@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ullastret – Thèmes 1 à 3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#f0e7d6;
+      --ink:#3a2d23;
+      --accent:#8d5a2b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      height:100vh;
+      overflow:hidden;
+    }
+    .slide{
+      display:none;
+      height:calc(100vh - 70px);
+      padding:2.4rem 3.2rem 1rem;
+    }
+    .slide.active{display:block;}
+    .theme{
+      font-size:1.05rem;
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      opacity:.65;
+      margin-bottom:.4rem;
+    }
+    h1{
+      font-size:3rem;
+      margin:0 0 1.7rem;
+      color:var(--accent);
+    }
+    .content{
+      max-width:1100px;
+      font-size:1.15rem;
+      line-height:1.5;
+    }
+    .content h2{
+      font-size:1.55rem;
+      margin:0 0 .5rem;
+    }
+    .content ul{
+      margin:.4rem 0 1rem 1.5rem;
+    }
+    .content li{
+      margin:.35rem 0;
+    }
+    iframe{
+      width:100%;
+      height:360px;
+      border:none;
+      border-radius:12px;
+      margin-top:.6rem;
+      background:#d9d2c5;
+    }
+    .note{
+      margin-top:.6rem;
+      font-size:.95rem;
+      opacity:.65;
+    }
+    .footer{
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 3.2rem;
+      background:rgba(240,231,214,.9);
+      border-top:1px solid rgba(58,45,35,.08);
+    }
+    .btn{
+      border:none;
+      background:rgba(141,90,43,.12);
+      color:var(--ink);
+      padding:.45rem 1.2rem;
+      border-radius:999px;
+      font-size:1rem;
+      cursor:pointer;
+    }
+    .btn:disabled{opacity:.35;cursor:not-allowed}
+    .dots{display:flex;gap:.5rem;}
+    .dot{
+      width:12px;height:12px;border-radius:50%;
+      background:rgba(141,90,43,.25);cursor:pointer;
+    }
+    .dot.active{background:var(--accent);}
+    .progress{
+      position:absolute;
+      bottom:70px;left:0;
+      height:4px;
+      background:var(--accent);
+      transition:width .25s;
+    }
+    @media(max-width:900px){
+      .slide{padding:1.6rem 1.4rem;}
+      h1{font-size:2.2rem;}
+      .content{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<div class="slide active">
+  <div class="theme">Thème 1 — Nature de la connaissance du site</div>
+  <h1>Puig de Sant Andreu d’Ullastret</h1>
+  <div class="content">
+    <h2>Comment on connaît ce site</h2>
+    <p>Oppidum ibérique majeur du nord-est de la Catalogne, occupé du VIᵉ au IIᵉ s. av. n. è. Notre connaissance vient de plusieurs vagues de recherches.</p>
+    <ul>
+      <li><strong>1947 – Pericot (MAC)</strong> : premières fouilles → fortifications, fossés dans le roc, habitats en terrasses, organisation planifiée.</li>
+      <li><strong>Années 1980</strong> : géophysique et études environnementales → confirmation de l’ancien lac au pied du Puig.</li>
+      <li><strong>Études de culture matérielle</strong> : céramiques, monnaies, objets, crânes cloués → éclairent l’économie et les pratiques.</li>
+      <li><strong>« Ullastret 3D » (Codina, de Prado & Martin, 2017)</strong> : restitution numérique de la ville vers 250 av. J.-C.</li>
+    </ul>
+    <p class="note">À dire : “on est passé d’un site fouillé à un site qu’on voit entier en 3D → ça renforce l’interprétation”.</p>
+  </div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+  <div class="theme">Thème 2 — Implantation, nature, durée, paysage</div>
+  <h1>Un oppidum de hauteur dans l’Empordà</h1>
+  <div class="content">
+    <h2>Pourquoi là ?</h2>
+    <p>Le Puig est à ~53 m d’altitude, au-dessus d’un lac ancien : ça donne une défense naturelle et une vue sur la plaine.</p>
+    <ul>
+      <li><strong>Défensif</strong> : pentes abruptes + fossé creusé → facile à défendre.</li>
+      <li><strong>Territorial</strong> : contrôle des voies entre l’intérieur et Emporion.</li>
+      <li><strong>Économique</strong> : plaine fertile + fermes satellites.</li>
+    </ul>
+    <h2>Occupation longue</h2>
+    <ul>
+      <li>VIᵉ–Vᵉ s. : noyau initial, enceinte primitive.</li>
+      <li>IVᵉ–IIIᵉ s. : apogée, env. 15 ha, quartiers, élites.</li>
+      <li>Vers 200 av. J.-C. : abandon dans le contexte de la romanisation.</li>
+    </ul>
+    <p class="note">Et avec l’Illa d’en Reixac (à 500 m), ça fait une dipolis : hauteur = politique/religieux, plaine = artisanat.</p>
+  </div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <div class="theme">Thème 3 — Principaux traits : taille, organisation, urbanisme</div>
+  <h1>Une ville ibérique planifiée</h1>
+  <div class="content">
+    <h2>Ce qu’on voit à Ullastret</h2>
+    <ul>
+      <li><strong>≈ 15 ha fortifiés</strong> → plus grande agglomération ibérique connue en Catalogne.</li>
+      <li><strong>Terrasses</strong> adaptées à la pente, rues qui montent vers le sommet.</li>
+      <li><strong>Maisons rectangulaires mitoyennes</strong>, parfois avec cours pavées, citernes, drains → élites.</li>
+      <li><strong>Espaces hiérarchisés</strong> : sommet (prestige/cultuel), niveaux intermédiaires (habitat + artisanat), bas (production).</li>
+      <li><strong>Fortifications monumentales</strong> + fossé creusé dans le roc.</li>
+    </ul>
+    <h2>Modèle 3D (à montrer)</h2>
+    <iframe
+      src="https://sketchfab.com/models/621ce484ede94c37b08baa18650decc7/embed?autostart=0&ui_controls=1&ui_infos=1&ui_inspector=0&ui_watermark=1"
+      title="Crani enclavat">
+    </iframe>
+    <p class="note">Tu le commentes vite : “ça montre le niveau culturel et la mise en scène du pouvoir”.</p>
+  </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <div class="theme">Conclusion partielle</div>
+  <h1>Ce que montrent les 3 thèmes</h1>
+  <div class="content">
+    <p>• Une connaissance très complète (fouilles → géophysique → 3D).<br>
+    • Un site implanté exprès : défendre, surveiller, exploiter la plaine.<br>
+    • Un urbanisme vraiment pensé, pas improvisé.</p>
+    <p class="note">Tu peux enchaîner ensuite sur : culture matérielle, fouilles récentes, préservation du site.</p>
+  </div>
+</div>
+
+<div class="progress" id="progress" style="width:25%"></div>
+
+<div class="footer">
+  <button class="btn" id="prevBtn" disabled>← Précédent</button>
+  <div style="display:flex;gap:.5rem;align-items:center;">
+    <span id="counter">1 / 4</span>
+    <div class="dots" id="dots"></div>
+  </div>
+  <button class="btn" id="nextBtn">Suivant →</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const counter = document.getElementById('counter');
+  const progress = document.getElementById('progress');
+  const dotsWrap = document.getElementById('dots');
+
+  let current = 0;
+  const total = slides.length;
+
+  function buildDots(){
+    for(let i=0;i<total;i++){
+      const d = document.createElement('div');
+      d.className = 'dot' + (i===0 ? ' active':'');
+      d.addEventListener('click', ()=>go(i));
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function go(i){
+    if(i<0 || i>=total) return;
+    slides[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    prevBtn.disabled = current===0;
+    nextBtn.disabled = current===total-1;
+    counter.textContent = (current+1) + ' / ' + total;
+    document.querySelectorAll('.dot').forEach((dot,idx)=>dot.classList.toggle('active', idx===current));
+    progress.style.width = ((current+1)/total)*100 + '%';
+  }
+
+  prevBtn.addEventListener('click', ()=>go(current-1));
+  nextBtn.addEventListener('click', ()=>go(current+1));
+  document.addEventListener('keydown', e=>{
+    if(e.key==='ArrowLeft') go(current-1);
+    if(e.key==='ArrowRight') go(current+1);
+  });
+
+  buildDots();
+</script>
+</body>
+</html>
